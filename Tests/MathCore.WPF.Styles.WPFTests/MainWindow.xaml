@@ -4,8 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:l="clr-namespace:MathCore.WPF.Styles.WPFTests"       
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="200" Width="300">
     <Grid>
-
+        <TextBox VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="5,70" Text="User name" Width="120">
+            <!--<TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="BorderThickness" Value="3"/>
+                    <Setter Property="BorderBrush" Value="Red"/>
+                </Style>
+            </TextBox.Style>-->
+        </TextBox>
+                 
     </Grid>
 </Window>

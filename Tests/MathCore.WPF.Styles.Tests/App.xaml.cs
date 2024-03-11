@@ -1,7 +1,7 @@
 ﻿
 using System.Windows;
 
-namespace MathCore.WPF.Styles.Tests
+namespace MathCore.WPF.Styles.WPFTests
 {
     public partial class App : Application
     {

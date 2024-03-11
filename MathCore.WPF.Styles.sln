@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathCore.WPF.Styles", "Math
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CE56AA71-E404-4C5E-A1D4-A3EEF6D927B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCore.WPF.Styles.Tests", "Tests\MathCore.WPF.Styles.Tests\MathCore.WPF.Styles.Tests.csproj", "{30F10FCA-AED6-4DF6-B609-933740537721}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathCore.WPF.Styles.WPFTests", "Tests\MathCore.WPF.Styles.Tests\MathCore.WPF.Styles.WPFTests.csproj", "{30F10FCA-AED6-4DF6-B609-933740537721}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

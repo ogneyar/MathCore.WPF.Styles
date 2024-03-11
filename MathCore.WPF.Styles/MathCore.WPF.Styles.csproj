@@ -1,11 +1,41 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
-	<ImplicitUsings>enable</ImplicitUsings>
-	<Nullable>enable</Nullable>
-	<UseWPF>true</UseWPF>
-	<LangVersion>latest</LangVersion>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<LangVersion>latest</LangVersion>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Version>0.0.2</Version>
+		<PackageReleaseNotes>
+			Запуск проекта
+		</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>Test.$(AssemblyName)</PackageId>
+		<Title>MathCore.WPF.Styles</Title>
+		<Authors>Ogneyar</Authors>
+		<Description>Пакет содержит стили и шаблоны элементов управления WPF</Description>
+		<Copyright>ogneyar@hutoryanin.ru</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/ogneyar/MathCore.WPF.Styles</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/ogneyar/MathCore.WPF.Styles</RepositoryUrl>
+		<PackageTags>WPF, Styles, Templates</PackageTags>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 </Project>

@@ -4,16 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:l="clr-namespace:MathCore.WPF.Styles.WPFTests"       
-        Title="MainWindow" Height="200" Width="300">
+        Title="MainWindow" 
+        Height="200" Width="300"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    
     <Grid>
-        <TextBox VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="5,70" Text="User name" Width="120">
-            <!--<TextBox.Style>
-                <Style TargetType="TextBox">
-                    <Setter Property="BorderThickness" Value="3"/>
-                    <Setter Property="BorderBrush" Value="Red"/>
-                </Style>
-            </TextBox.Style>-->
+        <TextBox VerticalAlignment="Top" HorizontalAlignment="Left"  
+                 Margin="5,30" Width="120" Tag="Введите имя:"
+                 Style="{StaticResource TaggedTextBoxStyle}">
         </TextBox>
-                 
+        <TextBox VerticalAlignment="Top" Margin="5,70"></TextBox>
     </Grid>
 </Window>

@@ -11,7 +11,7 @@
     
     <Grid>
         <TextBox VerticalAlignment="Top" HorizontalAlignment="Left"  
-                 Margin="5,30" Width="120" Tag="Введите имя:"
+                 Margin="5,30" Width="120" Tag="Введите имя"
                  Style="{StaticResource TaggedTextBoxStyle}">
         </TextBox>
         <TextBox VerticalAlignment="Top" Margin="5,70"></TextBox>

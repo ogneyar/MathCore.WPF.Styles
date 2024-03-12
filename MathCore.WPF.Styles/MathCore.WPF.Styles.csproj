@@ -12,7 +12,7 @@
 	<PropertyGroup>
 		<Version>0.0.3</Version>
 		<PackageReleaseNotes>
-			Анимация перемещения заголовка
+			Анимация перемещения заголовка TextBox
 		</PackageReleaseNotes>
 	</PropertyGroup>
 

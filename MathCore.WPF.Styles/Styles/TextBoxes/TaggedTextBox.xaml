@@ -3,6 +3,7 @@
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="../../Resources/Colors/Brushes.xaml"/>
+        <ResourceDictionary Source="../../Resources/EasingFunction.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     
     <ControlTemplate x:Key="TaggedTextBoxTemplate" TargetType="TextBox">
@@ -53,10 +54,12 @@
                         <Storyboard>
                             <DoubleAnimation Storyboard.TargetName="TitleTransform"
                                              Storyboard.TargetProperty="X"
-                                             To="5" Duration="0:0:1"/> 
+                                             To="5" Duration="0:0:0.3"
+                                             EasingFunction="{StaticResource CubicEase_InOut}"/>
                             <DoubleAnimation Storyboard.TargetName="TitleTransform"
                                              Storyboard.TargetProperty="Y"
-                                             To="16" Duration="0:0:1"/>
+                                             To="16" Duration="0:0:0.3"
+                                             EasingFunction="{StaticResource CubicEase_InOut}"/>
                         </Storyboard>
                     </BeginStoryboard>
                 </MultiTrigger.EnterActions>
@@ -65,10 +68,12 @@
                         <Storyboard>
                             <DoubleAnimation Storyboard.TargetName="TitleTransform"
                                              Storyboard.TargetProperty="X"
-                                             From="5" Duration="0:0:1"/>
+                                             From="5" Duration="0:0:0.3"
+                                             EasingFunction="{StaticResource CubicEase_InOut}"/>
                             <DoubleAnimation Storyboard.TargetName="TitleTransform"
                                              Storyboard.TargetProperty="Y"
-                                             From="16" Duration="0:0:1"/>
+                                             From="16" Duration="0:0:0.3"
+                                             EasingFunction="{StaticResource CubicEase_InOut}"/>
                         </Storyboard>
                     </BeginStoryboard>
                 </MultiTrigger.ExitActions>

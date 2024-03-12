@@ -26,7 +26,7 @@
                 <Setter TargetName="Border" Property="BorderBrush" Value="LightBlue" />
             </Trigger>
             <Trigger Property="IsKeyboardFocused" Value="True">
-                <Setter TargetName="Border" Property="BorderBrush" Value="blueviolet" />
+                <Setter TargetName="Border" Property="BorderBrush" Value="BlueViolet" />
             </Trigger>
 
             <MultiTrigger>

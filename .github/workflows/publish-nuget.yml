@@ -36,5 +36,5 @@ jobs:
       run: dotnet pack MathCore.WPF.Styles/MathCore.WPF.Styles.csproj --no-build -c Release -v q --include-symbols
 
     - name: Publishing
-      run: dotnet nuget push MathCore.WPF.Styles/MathCore.WPF.Styles/bin/Release/*.nupkg -s https://api.nuget.org/v3/index.json -n --skip-duplicate -k ${{ secrets.NuGetApiKey }} 
+      run: dotnet nuget push "**/*.nupkg" -s https://api.nuget.org/v3/index.json -n --skip-duplicate -k ${{ secrets.NuGetApiKey }} 
       

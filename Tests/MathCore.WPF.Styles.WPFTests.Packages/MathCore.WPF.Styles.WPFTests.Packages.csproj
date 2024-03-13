@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Test.MathCore.WPF.Styles" Version="0.0.2" />
+    <PackageReference Include="Test.MathCore.WPF.Styles" Version="0.0.4" />
   </ItemGroup>
 
 </Project>

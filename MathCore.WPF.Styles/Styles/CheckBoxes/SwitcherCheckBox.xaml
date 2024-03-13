@@ -1,8 +1,14 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:p="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <SolidColorBrush x:Key="SwitcherCheckBox.UncheckingBackgroundBrush" Color="DarkGray"/>
-    <SolidColorBrush x:Key="SwitcherCheckBox.CheckingBackgroundBrush" Color="DarkBlue"/>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../../Resources/Colors/Brushes.xaml"/>
+        <ResourceDictionary Source="../../Resources/EasingFunction.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+    <SolidColorBrush x:Key="SwitcherCheckBox.UncheckingBackgroundBrush" Color="DarkGray" p:Freeze="True"/>
+    <!--<SolidColorBrush x:Key="SwitcherCheckBox.CheckingBackgroundBrush" Color="DarkBlue"/>-->
     <Color x:Key="SwitcherCheckBox.CheckedBackgroundColor">DarkBlue</Color>
 
     <ControlTemplate x:Key="SwitcherCheckBoxTemplate" TargetType="CheckBox">
@@ -14,7 +20,7 @@
 
             <Grid Grid.Column="0" Width="32" Height="18">
                 <Border Name="Back" CornerRadius="9" Background="{StaticResource SwitcherCheckBox.UncheckingBackgroundBrush}">
-                    <Ellipse Name="Dot" Fill="White" Width="16" Height="16" Margin="1,0"
+                    <Ellipse Name="Dot" Fill="{StaticResource WhiteBrush}" Width="16" Height="16" Margin="1,0"
                          HorizontalAlignment="Left" VerticalAlignment="Center">
                         <Ellipse.RenderTransform>
                             <TranslateTransform x:Name="DotTranslate"/>

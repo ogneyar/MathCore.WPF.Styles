@@ -9,44 +9,6 @@
         ResizeMode="NoResize"
         Icon="./Sources/treehouse.jpg"
         WindowStartupLocation="CenterScreen">
-
-    <Window.Resources>
-        <SolidColorBrush x:Key="SwitcherCheckBox.UncheckingBackgroundBrush" Color="DarkGray"/>
-        <SolidColorBrush x:Key="SwitcherCheckBox.CheckingBackgroundBrush" Color="Blue"/>
-        
-        <ControlTemplate x:Key="SwitcherCheckBoxTemplate" TargetType="CheckBox">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-                
-                <Grid Grid.Column="0" Width="32" Height="18">
-                    <Border Name="Back" CornerRadius="9" Background="{StaticResource SwitcherCheckBox.UncheckingBackgroundBrush}">
-                        <Ellipse Name="Dot" Fill="White" Width="16" Height="16" Margin="1,0"
-                                 HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                    </Border>
-                </Grid>
-                
-                <ContentPresenter Grid.Column="1"
-                                  Margin="{TemplateBinding Padding}"
-                                  Focusable="False"
-                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-                                  RecognizesAccessKey="True"/>
-
-            </Grid>
-            
-            <ControlTemplate.Triggers>
-                
-            </ControlTemplate.Triggers>
-            
-        </ControlTemplate>
-        <Style x:Key="SwitcherCheckBoxStyle" TargetType="CheckBox">
-            <Setter Property="Template" Value="{StaticResource SwitcherCheckBoxTemplate}" />
-        </Style>
-    </Window.Resources>
     
     <Grid>
         <!--<TextBox VerticalAlignment="Top" HorizontalAlignment="Left"  
@@ -54,7 +16,7 @@
                  Style="{StaticResource TaggedTextBoxStyle}">
         </TextBox>-->
         <CheckBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,25"
-                  Content="Вы уверены?"
+                  Content="Вы уверены?" Padding="5,0"
                   Style="{StaticResource SwitcherCheckBoxStyle}"
                   IsEnabled="True"
                   IsChecked="False"/>

@@ -7,6 +7,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/MathCore.WPF.Styles;component/Styles/TextBoxes/TaggedTextBox.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MathCore.WPF.Styles;component/Styles/CheckBoxes/SwitcherCheckBox.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -10,9 +10,9 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<Version>0.0.3</Version>
+		<Version>0.0.4</Version>
 		<PackageReleaseNotes>
-			Анимация перемещения заголовка
+			Стиль для CheckBox'а - SwitcherCheckBoxStyle
 		</PackageReleaseNotes>
 	</PropertyGroup>
 

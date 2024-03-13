@@ -11,10 +11,15 @@
         WindowStartupLocation="CenterScreen">
     
     <Grid>
-        <TextBox VerticalAlignment="Top" HorizontalAlignment="Left"  
+        <!--<TextBox VerticalAlignment="Top" HorizontalAlignment="Left"  
                  Margin="5,30" Width="120" Tag="Введите имя"
                  Style="{StaticResource TaggedTextBoxStyle}">
-        </TextBox>
+        </TextBox>-->
+        <CheckBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,25"
+                  Content="Вы уверены?" Padding="5,0"
+                  Style="{StaticResource SwitcherCheckBoxStyle}"
+                  IsEnabled="True"
+                  IsChecked="False"/>
         <TextBox VerticalAlignment="Top" Margin="5,70"></TextBox>
     </Grid>
     
